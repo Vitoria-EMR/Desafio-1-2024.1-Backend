@@ -1,11 +1,10 @@
-função palíndromo(str){
+função palindrome(str){
   str = str.toLowerCase().replace(/[\W_]/g, '');
-  len = str.comprimento - 1;
+  len = str.lentgh - 1;
   for(var i = 0; i < len/2; i++) {
     if(str[i] !== str[len-i]) {
-      retorna falso;
+      return false;
     }
   }
-  retornar verdadeiro;
+  return true;
 }
-palíndromo("olho");
